@@ -1,0 +1,19 @@
+
+  refId                             displayName                     deviceType  serviceTag                      model             health   ipAddress       cpuType                                    nics  memoryInGB  hostname
+  -----                             -----------                     ----------  ----------                      -----             ------   ---------       -------                                    ----  ----------  --------
+  8a4c10db62b5a6850162b607e5010173  idrac-34MG382                   RackServer  34MG382                         PowerEdge R730xd  GREEN    10.204.144.87   Intel(R) Xeon(R) CPU E5-2667 v3 @ 3.20GHz  6     256         scaleio1
+  8a4c10db62b5a6850162b607e28e0089  idrac-34MD382                   RackServer  34MD382                         PowerEdge R730xd  GREEN    10.204.144.89   Intel(R) Xeon(R) CPU E5-2667 v3 @ 3.20GHz  6     256         scaleio3
+  8a4c10db62b5a6850162b607e30c00fe  idrac-34MF382                   RackServer  34MF382                         PowerEdge R730xd  GREEN    10.204.144.88   Intel(R) Xeon(R) CPU E5-2667 v3 @ 3.20GHz  6     256         scaleio2
+  dell_ftos-10.204.145.3            dellos9_sw1                     dellswitch  dell_ftos-10.204.145.3          S4810             UNKNOWN  10.204.145.3                                               0     0                   
+  dell_ftos-10.204.145.2            dellos9_sw2                     dellswitch  dell_ftos-10.204.145.2          S4810             UNKNOWN  10.204.145.2                                               0     0                   
+  scaleio-10.204.147.158            scaleio-scaleio-10.204.147.158  scaleio     scaleio-10.204.147.158          ScaleIO Gateway   UNKNOWN  10.204.147.158                                             0     0                   
+  vcenter-10.204.145.99                                             vcenter     mav-asmvc65.mavnet.us.dell.com  vCenter           UNKNOWN  10.204.145.99                                              0     0                   
+  vcenter-10.204.145.98                                             vcenter     mav-asmvc01.mavnet.us.dell.com  vCenter           UNKNOWN  10.204.145.98                                              0     0                   
+
+  refId                             refType        displayName       deviceType  managementIP 
+  -----                             -------        -----------       ----------  ------------ 
+  8a4c10db62b5a6850162b607e28e0089  serverRefType  Server - 34MD382  server      10.204.144.89
+  8a4c10db62b5a6850162b607e30c00fe  serverRefType  Server - 34MF382  server      10.204.144.88
+  8a4c10db62b5a6850162b607e5010173  serverRefType  Server - 34MG382  server      10.204.144.87
+
+
