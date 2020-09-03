@@ -1,0 +1,1802 @@
+{
+    "custom_stats": {}, 
+    "global_custom_stats": {}, 
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2020-03-05T15:41:06.723711Z", 
+                    "start": "2020-03-05T15:40:36.472748Z"
+                }, 
+                "id": "005056b6-b56c-67a1-5c1d-000000000006", 
+                "name": "Gather facts to Cloudlink Center"
+            }, 
+            "tasks": [
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_auth_session", 
+                            "addresses": [
+                                "100.68.108.111", 
+                                "100.68.108.112"
+                            ], 
+                            "ansible_facts": {
+                                "discovered_interpreter_python": "/usr/bin/python"
+                            }, 
+                            "changed": true, 
+                            "invocation": {
+                                "module_args": {
+                                    "addresses": [
+                                        "100.68.108.111", 
+                                        "100.68.108.112"
+                                    ], 
+                                    "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER", 
+                                    "session": null, 
+                                    "state": "present", 
+                                    "timeout": 30, 
+                                    "username": "secadmin", 
+                                    "validate_certs": false
+                                }
+                            }, 
+                            "session": {
+                                "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                "expires_in": 7199, 
+                                "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                "scope": "all", 
+                                "token_type": "bearer"
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:40:37.703482Z", 
+                            "start": "2020-03-05T15:40:36.490932Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-000000000008", 
+                        "name": "log in"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_version", 
+                            "addresses": {
+                                "current_version": {
+                                    "major": 6, 
+                                    "mgmt_revision": 7, 
+                                    "minor": 9, 
+                                    "patch": 0, 
+                                    "revision": 899
+                                }
+                            }, 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "session": {
+                                        "addresses": [
+                                            "100.68.108.111", 
+                                            "100.68.108.112"
+                                        ], 
+                                        "ansible_facts": {
+                                            "discovered_interpreter_python": "/usr/bin/python"
+                                        }, 
+                                        "changed": true, 
+                                        "failed": false, 
+                                        "session": {
+                                            "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                            "expires_in": 7199, 
+                                            "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                            "scope": "all", 
+                                            "token_type": "bearer"
+                                        }
+                                    }, 
+                                    "timeout": 30, 
+                                    "validate_certs": false
+                                }
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:40:38.582976Z", 
+                            "start": "2020-03-05T15:40:37.709471Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-00000000000b", 
+                        "name": "Gather version"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_license", 
+                            "addresses": [
+                                {
+                                    "assigned": true, 
+                                    "customer_domain": "FlexMGR", 
+                                    "deletable": true, 
+                                    "duration": 366, 
+                                    "end_date": "2020-08-01T00:00:00.000Z", 
+                                    "expired": false, 
+                                    "id": "e4c4ecef703a43f201703a44f4b9000d", 
+                                    "licensing_type": "capacity", 
+                                    "limit": 100, 
+                                    "platform": "all", 
+                                    "serial_number": "6a649b8", 
+                                    "start_date": "2019-08-01T00:00:00.000Z", 
+                                    "status": "active", 
+                                    "target_id": "e4c4ecef703a43f201703a44f4b9000d", 
+                                    "type": "subscription"
+                                }
+                            ], 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "session": {
+                                        "addresses": [
+                                            "100.68.108.111", 
+                                            "100.68.108.112"
+                                        ], 
+                                        "ansible_facts": {
+                                            "discovered_interpreter_python": "/usr/bin/python"
+                                        }, 
+                                        "changed": true, 
+                                        "failed": false, 
+                                        "session": {
+                                            "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                            "expires_in": 7199, 
+                                            "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                            "scope": "all", 
+                                            "token_type": "bearer"
+                                        }
+                                    }, 
+                                    "timeout": 30, 
+                                    "validate_certs": false
+                                }
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:40:39.475477Z", 
+                            "start": "2020-03-05T15:40:38.586889Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-00000000000c", 
+                        "name": "Gather License information"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_cluster_members", 
+                            "addresses": [
+                                {
+                                    "address": "100.68.108.111", 
+                                    "local": true, 
+                                    "name": "kannlink-1", 
+                                    "unsent_clc_config_batches": 0, 
+                                    "unsent_clc_monitoring_batches": 0, 
+                                    "unsent_heartbeat_batches": 0, 
+                                    "unsent_reload_batches": 0, 
+                                    "uuid": "7A9FE38B8F0E4C938A6FF17DB4934350"
+                                }, 
+                                {
+                                    "address": "100.68.108.112", 
+                                    "in_sync_status": "ok", 
+                                    "local": false, 
+                                    "name": "kannlink-2", 
+                                    "out_sync_status": "ok", 
+                                    "unsent_clc_config_batches": 0, 
+                                    "unsent_clc_monitoring_batches": 0, 
+                                    "unsent_heartbeat_batches": 0, 
+                                    "unsent_reload_batches": 0, 
+                                    "uuid": "F7DED614EF1A4662AE66CCA027A66CDB"
+                                }, 
+                                {
+                                    "address": "100.68.108.239", 
+                                    "in_sync_status": "ok", 
+                                    "local": false, 
+                                    "name": "kannlink-3", 
+                                    "out_sync_status": "ok", 
+                                    "unsent_clc_config_batches": 0, 
+                                    "unsent_clc_monitoring_batches": 0, 
+                                    "unsent_heartbeat_batches": 0, 
+                                    "unsent_reload_batches": 0, 
+                                    "uuid": "10F1A3E6F6474560B660529C3E998591"
+                                }
+                            ], 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "security_events": false, 
+                                    "session": {
+                                        "addresses": [
+                                            "100.68.108.111", 
+                                            "100.68.108.112"
+                                        ], 
+                                        "ansible_facts": {
+                                            "discovered_interpreter_python": "/usr/bin/python"
+                                        }, 
+                                        "changed": true, 
+                                        "failed": false, 
+                                        "session": {
+                                            "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                            "expires_in": 7199, 
+                                            "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                            "scope": "all", 
+                                            "token_type": "bearer"
+                                        }
+                                    }, 
+                                    "timeout": 30, 
+                                    "validate_certs": false
+                                }
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:40:40.361423Z", 
+                            "start": "2020-03-05T15:40:39.479493Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-00000000000d", 
+                        "name": "Gather Cluster Member information"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_cluster_health_facts", 
+                            "changed": false, 
+                            "health": [
+                                {
+                                    "address": "100.68.108.111", 
+                                    "alarms": [
+                                        {
+                                            "host": {
+                                                "id": "7A9FE38B8F0E4C938A6FF17DB4934350", 
+                                                "name": "kannlink-1", 
+                                                "type": "host"
+                                            }, 
+                                            "id": "e4c4ecf2703a390201703a391b380000", 
+                                            "severity": "low", 
+                                            "target": {
+                                                "id": "7A9FE38B8F0E4C938A6FF17DB4934350", 
+                                                "name": "kannlink-1", 
+                                                "type": "host"
+                                            }, 
+                                            "timestamp": "2020-02-12T16:26:25.976Z", 
+                                            "type": "backup_needed", 
+                                            "watched": true
+                                        }
+                                    ], 
+                                    "host_id": "7A9FE38B8F0E4C938A6FF17DB4934350"
+                                }, 
+                                {
+                                    "address": "100.68.108.112", 
+                                    "alarms": [
+                                        {
+                                            "host": {
+                                                "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                                "name": "kannlink-2", 
+                                                "type": "host"
+                                            }, 
+                                            "id": "e4c4ecf27035828f01703582a9f30000", 
+                                            "severity": "low", 
+                                            "target": {
+                                                "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                                "name": "kannlink-2", 
+                                                "type": "host"
+                                            }, 
+                                            "timestamp": "2020-02-11T18:28:40.562Z", 
+                                            "type": "backup_needed", 
+                                            "watched": true
+                                        }
+                                    ], 
+                                    "host_id": "F7DED614EF1A4662AE66CCA027A66CDB"
+                                }
+                            ], 
+                            "invocation": {
+                                "module_args": {
+                                    "aggregated": false, 
+                                    "include_disabled_alarms": true, 
+                                    "session": {
+                                        "addresses": [
+                                            "100.68.108.111", 
+                                            "100.68.108.112"
+                                        ], 
+                                        "ansible_facts": {
+                                            "discovered_interpreter_python": "/usr/bin/python"
+                                        }, 
+                                        "changed": true, 
+                                        "failed": false, 
+                                        "session": {
+                                            "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                            "expires_in": 7199, 
+                                            "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                            "scope": "all", 
+                                            "token_type": "bearer"
+                                        }
+                                    }, 
+                                    "timeout": 30, 
+                                    "validate_certs": false
+                                }
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:41:00.208423Z", 
+                            "start": "2020-03-05T15:40:40.365472Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-00000000000e", 
+                        "name": "Gather health (alarms) of each cluster member"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_cluster_members", 
+                            "addresses": [
+                                {
+                                    "details": "100.68.108.110", 
+                                    "host": {
+                                        "id": "7A9FE38B8F0E4C938A6FF17DB4934350", 
+                                        "name": "kannlink-1", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecef70a7bca40170ab5b14c60009", 
+                                    "level": "info", 
+                                    "name": "User logged in", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-05T15:40:37.957Z"
+                                }, 
+                                {
+                                    "host": {
+                                        "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                        "name": "kannlink-2", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecf0703585750170a7ff030503b2", 
+                                    "level": "info", 
+                                    "name": "User logged out", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-05T00:01:12.453Z"
+                                }, 
+                                {
+                                    "host": {
+                                        "id": "10F1A3E6F6474560B660529C3E998591", 
+                                        "name": "kannlink-3", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ec6f709be0ff0170a7ff02600067", 
+                                    "level": "info", 
+                                    "name": "User logged out", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-05T00:01:12.288Z"
+                                }, 
+                                {
+                                    "details": "Logged out", 
+                                    "host": {
+                                        "id": "7A9FE38B8F0E4C938A6FF17DB4934350", 
+                                        "name": "kannlink-1", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecef70a7bca40170a7febc150007", 
+                                    "level": "info", 
+                                    "name": "User logged out", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-05T00:00:54.293Z"
+                                }, 
+                                {
+                                    "details": "100.68.108.115", 
+                                    "host": {
+                                        "id": "7A9FE38B8F0E4C938A6FF17DB4934350", 
+                                        "name": "kannlink-1", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecef70a7bca40170a7fe938d0006", 
+                                    "level": "info", 
+                                    "name": "User logged in", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-05T00:00:43.917Z"
+                                }, 
+                                {
+                                    "host": {
+                                        "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                        "name": "kannlink-2", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecf0703585750170a7cbbdb003af", 
+                                    "level": "info", 
+                                    "name": "User logged out", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-04T23:05:12.368Z"
+                                }, 
+                                {
+                                    "host": {
+                                        "id": "10F1A3E6F6474560B660529C3E998591", 
+                                        "name": "kannlink-3", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ec6f709be0ff0170a7cbbd0e0064", 
+                                    "level": "info", 
+                                    "name": "User logged out", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-04T23:05:12.206Z"
+                                }, 
+                                {
+                                    "details": "Logged out", 
+                                    "host": {
+                                        "id": "7A9FE38B8F0E4C938A6FF17DB4934350", 
+                                        "name": "kannlink-1", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecef70a7bca40170a7cb95b20002", 
+                                    "level": "info", 
+                                    "name": "User logged out", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-04T23:05:02.129Z"
+                                }, 
+                                {
+                                    "host": {
+                                        "id": "7A9FE38B8F0E4C938A6FF17DB4934350", 
+                                        "name": "kannlink-1", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecef70a7bca40170a7ca232e0001", 
+                                    "level": "info", 
+                                    "name": "User logged out", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-04T23:03:27.277Z"
+                                }, 
+                                {
+                                    "host": {
+                                        "id": "10F1A3E6F6474560B660529C3E998591", 
+                                        "name": "kannlink-3", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ec6f709be0ff0170a7ca204d0063", 
+                                    "level": "info", 
+                                    "name": "User logged out", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-04T23:03:26.541Z"
+                                }, 
+                                {
+                                    "details": "Logged out", 
+                                    "host": {
+                                        "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                        "name": "kannlink-2", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecf0703585750170a7c9f0f403ae", 
+                                    "level": "info", 
+                                    "name": "User logged out", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-04T23:03:14.420Z"
+                                }, 
+                                {
+                                    "host": {
+                                        "id": "7A9FE38B8F0E4C938A6FF17DB4934350", 
+                                        "name": "kannlink-1", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecef70a7bca40170a7bcbc4f0000", 
+                                    "level": "info", 
+                                    "name": "Vault is auto unlocked", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "3a1917e1dc0d0bb78e36ad2e0f8ef517", 
+                                        "name": "Key Vault", 
+                                        "type": "configuration"
+                                    }, 
+                                    "timestamp": "2020-03-04T22:48:48.968Z"
+                                }, 
+                                {
+                                    "details": "Logged out", 
+                                    "host": {
+                                        "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                        "name": "kannlink-2", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecf0703585750170a7bada6e03aa", 
+                                    "level": "info", 
+                                    "name": "User logged out", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-04T22:46:45.614Z"
+                                }, 
+                                {
+                                    "action": {
+                                        "details": "Protector Type: CloudLink Vault, Key Location Type: Local Database", 
+                                        "end_time": "2020-03-04T22:46:42.631Z", 
+                                        "host": {
+                                            "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                            "name": "kannlink-2", 
+                                            "type": "host"
+                                        }, 
+                                        "id": "e4c4ecf0703585750170a7bace77039a", 
+                                        "name": "Create keystore", 
+                                        "start_time": "2020-03-04T22:46:42.550Z", 
+                                        "status": "succeeded", 
+                                        "target": {
+                                            "id": "e4c4ecf0703585750170a7baceb9039d", 
+                                            "name": "dumb_store_name", 
+                                            "type": "key_store"
+                                        }, 
+                                        "user": {
+                                            "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                            "name": "secadmin", 
+                                            "type": "user"
+                                        }
+                                    }, 
+                                    "host": {
+                                        "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                        "name": "kannlink-2", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecf0703585750170a7bace77039b", 
+                                    "level": "info", 
+                                    "name": "Create keystore", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "e4c4ecf0703585750170a7baceb9039d", 
+                                        "name": "dumb_store_name", 
+                                        "type": "key_store"
+                                    }, 
+                                    "timestamp": "2020-03-04T22:46:42.551Z"
+                                }, 
+                                {
+                                    "details": "100.68.108.110", 
+                                    "host": {
+                                        "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                        "name": "kannlink-2", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecf0703585750170a7baca830399", 
+                                    "level": "info", 
+                                    "name": "User logged in", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-04T22:46:41.539Z"
+                                }, 
+                                {
+                                    "action": {
+                                        "end_time": "2020-03-04T22:44:17.690Z", 
+                                        "host": {
+                                            "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                            "name": "kannlink-2", 
+                                            "type": "host"
+                                        }, 
+                                        "id": "e4c4ecf0703585750170a7b8988a0391", 
+                                        "name": "Delete keystore", 
+                                        "start_time": "2020-03-04T22:44:17.673Z", 
+                                        "status": "succeeded", 
+                                        "target": {
+                                            "id": "e4c4ecef70a7b3710170a7b683860009", 
+                                            "name": "dumb_store_name", 
+                                            "type": "key_store"
+                                        }, 
+                                        "user": {
+                                            "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                            "name": "secadmin", 
+                                            "type": "user"
+                                        }
+                                    }, 
+                                    "host": {
+                                        "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                        "name": "kannlink-2", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecf0703585750170a7b8988a0392", 
+                                    "level": "info", 
+                                    "name": "Delete keystore", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "e4c4ecef70a7b3710170a7b683860009", 
+                                        "name": "dumb_store_name", 
+                                        "type": "key_store"
+                                    }, 
+                                    "timestamp": "2020-03-04T22:44:17.674Z"
+                                }, 
+                                {
+                                    "action": {
+                                        "end_time": "2020-03-04T22:43:58.548Z", 
+                                        "fail_details": "This keystore is used by machine group(s)", 
+                                        "host": {
+                                            "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                            "name": "kannlink-2", 
+                                            "type": "host"
+                                        }, 
+                                        "id": "e4c4ecf0703585750170a7b84dbc038a", 
+                                        "name": "Delete keystore", 
+                                        "start_time": "2020-03-04T22:43:58.523Z", 
+                                        "status": "failed", 
+                                        "target": {
+                                            "id": "e4c4ecef70a7b3710170a7b683860009", 
+                                            "name": "dumb_store_name", 
+                                            "type": "key_store"
+                                        }, 
+                                        "user": {
+                                            "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                            "name": "secadmin", 
+                                            "type": "user"
+                                        }
+                                    }, 
+                                    "host": {
+                                        "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                        "name": "kannlink-2", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecf0703585750170a7b84dbd038b", 
+                                    "level": "info", 
+                                    "name": "Delete keystore", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "e4c4ecef70a7b3710170a7b683860009", 
+                                        "name": "dumb_store_name", 
+                                        "type": "key_store"
+                                    }, 
+                                    "timestamp": "2020-03-04T22:43:58.525Z"
+                                }, 
+                                {
+                                    "details": "10.130.87.4", 
+                                    "host": {
+                                        "id": "F7DED614EF1A4662AE66CCA027A66CDB", 
+                                        "name": "kannlink-2", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecf0703585750170a7b6b2200389", 
+                                    "level": "info", 
+                                    "name": "User logged in", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-04T22:42:13.152Z"
+                                }, 
+                                {
+                                    "details": "Logged out", 
+                                    "host": {
+                                        "id": "7A9FE38B8F0E4C938A6FF17DB4934350", 
+                                        "name": "kannlink-1", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecef70a7b3710170a7b68fa30016", 
+                                    "level": "info", 
+                                    "name": "User logged out", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                        "name": "secadmin", 
+                                        "type": "user"
+                                    }, 
+                                    "timestamp": "2020-03-04T22:42:04.323Z"
+                                }, 
+                                {
+                                    "action": {
+                                        "details": "Protector Type: CloudLink Vault, Key Location Type: Local Database", 
+                                        "end_time": "2020-03-04T22:42:01.254Z", 
+                                        "host": {
+                                            "id": "7A9FE38B8F0E4C938A6FF17DB4934350", 
+                                            "name": "kannlink-1", 
+                                            "type": "host"
+                                        }, 
+                                        "id": "e4c4ecef70a7b3710170a7b683510006", 
+                                        "name": "Create keystore", 
+                                        "start_time": "2020-03-04T22:42:01.167Z", 
+                                        "status": "succeeded", 
+                                        "target": {
+                                            "id": "e4c4ecef70a7b3710170a7b683860009", 
+                                            "name": "dumb_store_name", 
+                                            "type": "key_store"
+                                        }, 
+                                        "user": {
+                                            "id": "005ee9135ce5e2e6015ce5e443610000", 
+                                            "name": "secadmin", 
+                                            "type": "user"
+                                        }
+                                    }, 
+                                    "host": {
+                                        "id": "7A9FE38B8F0E4C938A6FF17DB4934350", 
+                                        "name": "kannlink-1", 
+                                        "type": "host"
+                                    }, 
+                                    "id": "e4c4ecef70a7b3710170a7b683520007", 
+                                    "level": "info", 
+                                    "name": "Create keystore", 
+                                    "result": "granted", 
+                                    "target": {
+                                        "id": "e4c4ecef70a7b3710170a7b683860009", 
+                                        "name": "dumb_store_name", 
+                                        "type": "key_store"
+                                    }, 
+                                    "timestamp": "2020-03-04T22:42:01.170Z"
+                                }
+                            ], 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "security_events": true, 
+                                    "session": {
+                                        "addresses": [
+                                            "100.68.108.111", 
+                                            "100.68.108.112"
+                                        ], 
+                                        "ansible_facts": {
+                                            "discovered_interpreter_python": "/usr/bin/python"
+                                        }, 
+                                        "changed": true, 
+                                        "failed": false, 
+                                        "session": {
+                                            "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                            "expires_in": 7199, 
+                                            "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                            "scope": "all", 
+                                            "token_type": "bearer"
+                                        }
+                                    }, 
+                                    "timeout": 30, 
+                                    "validate_certs": false
+                                }
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:41:00.852541Z", 
+                            "start": "2020-03-05T15:41:00.212542Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-00000000000f", 
+                        "name": "Gather last twenty security events"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_approved_network", 
+                            "addresses": [
+                                {
+                                    "description": "siomgmt", 
+                                    "ip_addresses": [
+                                        "100.68.108.0/24"
+                                    ], 
+                                    "name": "siomgmt", 
+                                    "target_id": "e4c4ecef703a43f201703a4fb3830033"
+                                }, 
+                                {
+                                    "description": "Created by vxfm", 
+                                    "ip_addresses": [
+                                        "100.68.108.222", 
+                                        "100.68.108.224", 
+                                        "100.68.108.225"
+                                    ], 
+                                    "name": "MG-1 network", 
+                                    "target_id": "e4c4ecef703a43f201707938904e0501"
+                                }, 
+                                {
+                                    "description": "Created by vxfm", 
+                                    "ip_addresses": [
+                                        "100.100.100.100"
+                                    ], 
+                                    "name": "dump_approved_network", 
+                                    "target_id": "e4c4ecf0703585750170a7bad2b203a1"
+                                }
+                            ], 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "allowed_addresses": [], 
+                                    "description": "", 
+                                    "list_networks": true, 
+                                    "name": null, 
+                                    "session": {
+                                        "addresses": [
+                                            "100.68.108.111", 
+                                            "100.68.108.112"
+                                        ], 
+                                        "ansible_facts": {
+                                            "discovered_interpreter_python": "/usr/bin/python"
+                                        }, 
+                                        "changed": true, 
+                                        "failed": false, 
+                                        "session": {
+                                            "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                            "expires_in": 7199, 
+                                            "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                            "scope": "all", 
+                                            "token_type": "bearer"
+                                        }
+                                    }, 
+                                    "state": "present", 
+                                    "timeout": 30, 
+                                    "validate_certs": false
+                                }
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:41:01.745170Z", 
+                            "start": "2020-03-05T15:41:00.856592Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-000000000010", 
+                        "name": "Gather list of approved networks"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_machine_groups", 
+                            "addresses": [
+                                {
+                                    "code": "6c58-1850", 
+                                    "current_keystore": "Initial", 
+                                    "current_usage_capacity": 0, 
+                                    "current_usage_instance": 0, 
+                                    "current_usage_sed_instance": 0, 
+                                    "current_usage_sockets": 0, 
+                                    "description": "Default Group", 
+                                    "encryption_policy": "encrypt_none", 
+                                    "is_auto_upgrade": false, 
+                                    "key_rotation_interval": 0, 
+                                    "locations": [], 
+                                    "manage_sed": false, 
+                                    "managing_roles": [], 
+                                    "max_usage_capacity": 35, 
+                                    "max_usage_instance": 0, 
+                                    "max_usage_sed_instance": 0, 
+                                    "max_usage_sockets": 0, 
+                                    "name": "Default", 
+                                    "networks": [
+                                        "siomgmt"
+                                    ], 
+                                    "policies": [
+                                        {
+                                            "policy": "ip_changed", 
+                                            "value": "auto_in_subnet"
+                                        }, 
+                                        {
+                                            "policy": "volume_moved", 
+                                            "value": "manual"
+                                        }, 
+                                        {
+                                            "policy": "platform_changed", 
+                                            "value": "manual"
+                                        }, 
+                                        {
+                                            "policy": "integrity_changed", 
+                                            "value": "manual"
+                                        }, 
+                                        {
+                                            "policy": "machine_cloned", 
+                                            "value": "manual"
+                                        }, 
+                                        {
+                                            "policy": "new_machine_detected", 
+                                            "value": "auto"
+                                        }
+                                    ], 
+                                    "target_id": "e4c4ecef703a43f201703a4572ed0021"
+                                }, 
+                                {
+                                    "code": "5e0d-0199", 
+                                    "current_keystore": "KS-1", 
+                                    "current_usage_capacity": 35, 
+                                    "current_usage_instance": 0, 
+                                    "current_usage_sed_instance": 0, 
+                                    "current_usage_sockets": 0, 
+                                    "description": "Created by VXFM", 
+                                    "encryption_policy": "encrypt_none", 
+                                    "is_auto_upgrade": false, 
+                                    "key_rotation_interval": 0, 
+                                    "locations": [], 
+                                    "manage_sed": false, 
+                                    "managing_roles": [
+                                        "SecAdmin"
+                                    ], 
+                                    "max_usage_capacity": 35, 
+                                    "max_usage_instance": 0, 
+                                    "max_usage_sed_instance": 0, 
+                                    "max_usage_sockets": 0, 
+                                    "name": "MG-1", 
+                                    "networks": [
+                                        "MG-1 network"
+                                    ], 
+                                    "policies": [
+                                        {
+                                            "policy": "ip_changed", 
+                                            "value": "auto_in_subnet"
+                                        }, 
+                                        {
+                                            "policy": "volume_moved", 
+                                            "value": "manual"
+                                        }, 
+                                        {
+                                            "policy": "platform_changed", 
+                                            "value": "manual"
+                                        }, 
+                                        {
+                                            "policy": "integrity_changed", 
+                                            "value": "manual"
+                                        }, 
+                                        {
+                                            "policy": "machine_cloned", 
+                                            "value": "manual"
+                                        }, 
+                                        {
+                                            "policy": "new_machine_detected", 
+                                            "value": "auto"
+                                        }
+                                    ], 
+                                    "target_id": "e4c4ecef703a43f2017079a0e9d50526"
+                                }, 
+                                {
+                                    "code": "08cb-6201", 
+                                    "current_keystore": "dumb_store_name", 
+                                    "current_usage_capacity": 0, 
+                                    "current_usage_instance": 0, 
+                                    "current_usage_sed_instance": 0, 
+                                    "current_usage_sockets": 0, 
+                                    "description": "Created by VXFM", 
+                                    "encryption_policy": "encrypt_none", 
+                                    "is_auto_upgrade": false, 
+                                    "key_rotation_interval": 0, 
+                                    "locations": [], 
+                                    "manage_sed": false, 
+                                    "managing_roles": [
+                                        "SecAdmin"
+                                    ], 
+                                    "max_usage_capacity": 0, 
+                                    "max_usage_instance": 0, 
+                                    "max_usage_sed_instance": 0, 
+                                    "max_usage_sockets": 0, 
+                                    "name": "dumb_group_name", 
+                                    "networks": [
+                                        "dump_approved_network"
+                                    ], 
+                                    "policies": [
+                                        {
+                                            "policy": "ip_changed", 
+                                            "value": "auto_in_subnet"
+                                        }, 
+                                        {
+                                            "policy": "volume_moved", 
+                                            "value": "manual"
+                                        }, 
+                                        {
+                                            "policy": "platform_changed", 
+                                            "value": "manual"
+                                        }, 
+                                        {
+                                            "policy": "integrity_changed", 
+                                            "value": "manual"
+                                        }, 
+                                        {
+                                            "policy": "machine_cloned", 
+                                            "value": "manual"
+                                        }, 
+                                        {
+                                            "policy": "new_machine_detected", 
+                                            "value": "auto"
+                                        }
+                                    ], 
+                                    "target_id": "e4c4ecf0703585750170a7bad75903a8"
+                                }
+                            ], 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "current_keystore": null, 
+                                    "description": "", 
+                                    "encryption_policy": "encrypt_all", 
+                                    "is_auto_upgrade": false, 
+                                    "list_groups": true, 
+                                    "managing_roles": null, 
+                                    "name": null, 
+                                    "networks": [], 
+                                    "policies": {
+                                        "integrity_changed": "manual", 
+                                        "ip_changed": "manual", 
+                                        "machine_cloned": "manual", 
+                                        "new_machine_detected": "auto", 
+                                        "platform_changed": "manual", 
+                                        "volume_moved": "manual"
+                                    }, 
+                                    "session": {
+                                        "addresses": [
+                                            "100.68.108.111", 
+                                            "100.68.108.112"
+                                        ], 
+                                        "ansible_facts": {
+                                            "discovered_interpreter_python": "/usr/bin/python"
+                                        }, 
+                                        "changed": true, 
+                                        "failed": false, 
+                                        "session": {
+                                            "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                            "expires_in": 7199, 
+                                            "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                            "scope": "all", 
+                                            "token_type": "bearer"
+                                        }
+                                    }, 
+                                    "state": "absent", 
+                                    "timeout": 30, 
+                                    "validate_certs": false
+                                }
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:41:02.682119Z", 
+                            "start": "2020-03-05T15:41:01.749653Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-000000000011", 
+                        "name": "Gather list of machine_groups"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_machine", 
+                            "addresses": [
+                                {
+                                    "blocked": false, 
+                                    "encryption_policy": "encrypt_none", 
+                                    "group": "MG-1", 
+                                    "ip_address": "100.68.108.222", 
+                                    "is_waiting_upgrade": false, 
+                                    "manage_sed": false, 
+                                    "name": "node1", 
+                                    "os": "centos", 
+                                    "os_name": "CentOS Linux release 7.7.1908 (Core)", 
+                                    "platform": "physical", 
+                                    "registered": true, 
+                                    "resources": [
+                                        {
+                                            "drives": "/dev/sdg", 
+                                            "exempt_from_policy": false, 
+                                            "id": "8ae3a550-0fa6-4443-8f1a-0a0641aa6cf9", 
+                                            "mpoint": "/", 
+                                            "percentage": 100, 
+                                            "size": 43, 
+                                            "state": "unencrypted", 
+                                            "supported": false, 
+                                            "type": "boot"
+                                        }, 
+                                        {
+                                            "drives": "/dev/nvme0n1", 
+                                            "exempt_from_policy": false, 
+                                            "id": "9486948577248625", 
+                                            "label": "/dev/mapper/svm_nvme0n1", 
+                                            "mpoint": "/dev/nvme0n1", 
+                                            "percentage": 100, 
+                                            "size": 1490, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_sds"
+                                        }, 
+                                        {
+                                            "drives": "/dev/nvme1n1", 
+                                            "exempt_from_policy": false, 
+                                            "id": "9486948577258625", 
+                                            "label": "/dev/mapper/svm_nvme1n1", 
+                                            "mpoint": "/dev/nvme1n1", 
+                                            "percentage": 100, 
+                                            "size": 1490, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_sds"
+                                        }, 
+                                        {
+                                            "drives": "/dev/nvme2n1", 
+                                            "exempt_from_policy": false, 
+                                            "id": "9486948577268625", 
+                                            "label": "/dev/mapper/svm_nvme2n1", 
+                                            "mpoint": "/dev/nvme2n1", 
+                                            "percentage": 100, 
+                                            "size": 1490, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_sds"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sda", 
+                                            "exempt_from_policy": false, 
+                                            "id": "94917673", 
+                                            "label": "/dev/mapper/svm_sda", 
+                                            "mpoint": "/dev/sda", 
+                                            "percentage": 100, 
+                                            "size": 1788, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_raw"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sdb", 
+                                            "exempt_from_policy": false, 
+                                            "id": "94917674", 
+                                            "label": "/dev/mapper/svm_sdb", 
+                                            "mpoint": "/dev/sdb", 
+                                            "percentage": 100, 
+                                            "size": 1788, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_raw"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sdc", 
+                                            "exempt_from_policy": false, 
+                                            "id": "94917675", 
+                                            "label": "/dev/mapper/svm_sdc", 
+                                            "mpoint": "/dev/sdc", 
+                                            "percentage": 100, 
+                                            "size": 1788, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_raw"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sdd", 
+                                            "exempt_from_policy": false, 
+                                            "id": "94917676", 
+                                            "label": "/dev/mapper/svm_sdd", 
+                                            "mpoint": "/dev/sdd", 
+                                            "percentage": 100, 
+                                            "size": 1788, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_raw"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sde", 
+                                            "exempt_from_policy": false, 
+                                            "id": "94917677", 
+                                            "label": "/dev/mapper/svm_sde", 
+                                            "mpoint": "/dev/sde", 
+                                            "percentage": 100, 
+                                            "size": 1788, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_raw"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sdg", 
+                                            "exempt_from_policy": false, 
+                                            "id": "859ae062-54d1-4575-9d2b-432d5eb4d7d4", 
+                                            "mpoint": "/home", 
+                                            "percentage": 100, 
+                                            "size": 143, 
+                                            "state": "unencrypted", 
+                                            "supported": false, 
+                                            "type": "system"
+                                        }
+                                    ], 
+                                    "status": "disconnected", 
+                                    "target_id": "53fb67ac-0f40-45b7-9283-0550a39f6f00", 
+                                    "time_registered": "2020-02-24T23:57:50.365Z", 
+                                    "uuid": "53fb67ac-0f40-45b7-9283-0550a39f6f00", 
+                                    "version": "6.9 (build 2348)"
+                                }, 
+                                {
+                                    "blocked": false, 
+                                    "encryption_policy": "encrypt_none", 
+                                    "group": "MG-1", 
+                                    "ip_address": "100.68.108.224", 
+                                    "is_waiting_upgrade": false, 
+                                    "manage_sed": false, 
+                                    "name": "node2", 
+                                    "os": "centos", 
+                                    "os_name": "CentOS Linux release 7.7.1908 (Core)", 
+                                    "platform": "physical", 
+                                    "registered": true, 
+                                    "resources": [
+                                        {
+                                            "drives": "/dev/sdg", 
+                                            "exempt_from_policy": false, 
+                                            "id": "09b10d06-af30-49db-bc64-a1babc2b1ba0", 
+                                            "mpoint": "/", 
+                                            "percentage": 100, 
+                                            "size": 43, 
+                                            "state": "unencrypted", 
+                                            "supported": false, 
+                                            "type": "boot"
+                                        }, 
+                                        {
+                                            "drives": "/dev/nvme0n1", 
+                                            "exempt_from_policy": false, 
+                                            "id": "9486948577248625", 
+                                            "label": "/dev/mapper/svm_nvme0n1", 
+                                            "mpoint": "/dev/nvme0n1", 
+                                            "percentage": 100, 
+                                            "size": 1490, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_sds"
+                                        }, 
+                                        {
+                                            "drives": "/dev/nvme1n1", 
+                                            "exempt_from_policy": false, 
+                                            "id": "9486948577258625", 
+                                            "label": "/dev/mapper/svm_nvme1n1", 
+                                            "mpoint": "/dev/nvme1n1", 
+                                            "percentage": 100, 
+                                            "size": 1490, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_sds"
+                                        }, 
+                                        {
+                                            "drives": "/dev/nvme2n1", 
+                                            "exempt_from_policy": false, 
+                                            "id": "9486948577268625", 
+                                            "label": "/dev/mapper/svm_nvme2n1", 
+                                            "mpoint": "/dev/nvme2n1", 
+                                            "percentage": 100, 
+                                            "size": 1490, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_sds"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sda", 
+                                            "exempt_from_policy": false, 
+                                            "id": "94917673", 
+                                            "label": "/dev/mapper/svm_sda", 
+                                            "mpoint": "/dev/sda", 
+                                            "percentage": 100, 
+                                            "size": 1788, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_raw"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sdc", 
+                                            "exempt_from_policy": false, 
+                                            "id": "94917675", 
+                                            "label": "/dev/mapper/svm_sdc", 
+                                            "mpoint": "/dev/sdc", 
+                                            "percentage": 100, 
+                                            "size": 1788, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_raw"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sdd", 
+                                            "exempt_from_policy": false, 
+                                            "id": "94917676", 
+                                            "label": "/dev/mapper/svm_sdd", 
+                                            "mpoint": "/dev/sdd", 
+                                            "percentage": 100, 
+                                            "size": 1788, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_raw"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sde", 
+                                            "exempt_from_policy": false, 
+                                            "id": "94917677", 
+                                            "label": "/dev/mapper/svm_sde", 
+                                            "mpoint": "/dev/sde", 
+                                            "percentage": 100, 
+                                            "size": 1788, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_raw"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sdg", 
+                                            "exempt_from_policy": false, 
+                                            "id": "256eb4d8-d8d4-430c-a296-523ecdc3151b", 
+                                            "mpoint": "/home", 
+                                            "percentage": 100, 
+                                            "size": 143, 
+                                            "state": "unencrypted", 
+                                            "supported": false, 
+                                            "type": "system"
+                                        }
+                                    ], 
+                                    "status": "disconnected", 
+                                    "target_id": "4e6f5bfa-4419-4f84-bbb3-72c1e62cc900", 
+                                    "time_registered": "2020-02-24T23:59:31.917Z", 
+                                    "uuid": "4e6f5bfa-4419-4f84-bbb3-72c1e62cc900", 
+                                    "version": "6.9 (build 2348)"
+                                }, 
+                                {
+                                    "blocked": false, 
+                                    "encryption_policy": "encrypt_none", 
+                                    "group": "MG-1", 
+                                    "ip_address": "100.68.108.225", 
+                                    "is_waiting_upgrade": false, 
+                                    "manage_sed": false, 
+                                    "name": "node3", 
+                                    "os": "centos", 
+                                    "os_name": "CentOS Linux release 7.7.1908 (Core)", 
+                                    "platform": "physical", 
+                                    "registered": true, 
+                                    "resources": [
+                                        {
+                                            "drives": "/dev/sdg", 
+                                            "exempt_from_policy": false, 
+                                            "id": "610eedf8-2369-49ad-a6be-f6832053867a", 
+                                            "mpoint": "/", 
+                                            "percentage": 100, 
+                                            "size": 43, 
+                                            "state": "unencrypted", 
+                                            "supported": false, 
+                                            "type": "boot"
+                                        }, 
+                                        {
+                                            "drives": "/dev/nvme0n1", 
+                                            "exempt_from_policy": false, 
+                                            "id": "9486948577248625", 
+                                            "label": "/dev/mapper/svm_nvme0n1", 
+                                            "mpoint": "/dev/nvme0n1", 
+                                            "percentage": 100, 
+                                            "size": 1490, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_sds"
+                                        }, 
+                                        {
+                                            "drives": "/dev/nvme1n1", 
+                                            "exempt_from_policy": false, 
+                                            "id": "9486948577258625", 
+                                            "label": "/dev/mapper/svm_nvme1n1", 
+                                            "mpoint": "/dev/nvme1n1", 
+                                            "percentage": 100, 
+                                            "size": 1490, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_sds"
+                                        }, 
+                                        {
+                                            "drives": "/dev/nvme2n1", 
+                                            "exempt_from_policy": false, 
+                                            "id": "9486948577268625", 
+                                            "label": "/dev/mapper/svm_nvme2n1", 
+                                            "mpoint": "/dev/nvme2n1", 
+                                            "percentage": 100, 
+                                            "size": 1490, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_sds"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sdc", 
+                                            "exempt_from_policy": false, 
+                                            "id": "94917675", 
+                                            "label": "/dev/mapper/svm_sdc", 
+                                            "mpoint": "/dev/sdc", 
+                                            "percentage": 100, 
+                                            "size": 1788, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_raw"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sdd", 
+                                            "exempt_from_policy": false, 
+                                            "id": "94917676", 
+                                            "label": "/dev/mapper/svm_sdd", 
+                                            "mpoint": "/dev/sdd", 
+                                            "percentage": 100, 
+                                            "size": 1788, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_raw"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sde", 
+                                            "exempt_from_policy": false, 
+                                            "id": "94917677", 
+                                            "label": "/dev/mapper/svm_sde", 
+                                            "mpoint": "/dev/sde", 
+                                            "percentage": 100, 
+                                            "size": 1788, 
+                                            "state": "encrypted", 
+                                            "supported": false, 
+                                            "type": "data_raw"
+                                        }, 
+                                        {
+                                            "drives": "/dev/sdg", 
+                                            "exempt_from_policy": false, 
+                                            "id": "43a5a143-7623-4113-b438-e760678a0b0c", 
+                                            "mpoint": "/home", 
+                                            "percentage": 100, 
+                                            "size": 143, 
+                                            "state": "unencrypted", 
+                                            "supported": false, 
+                                            "type": "system"
+                                        }
+                                    ], 
+                                    "status": "disconnected", 
+                                    "target_id": "efd3732a-636d-4f1b-87ac-c1a930c62400", 
+                                    "time_registered": "2020-02-25T00:01:15.889Z", 
+                                    "uuid": "efd3732a-636d-4f1b-87ac-c1a930c62400", 
+                                    "version": "6.9 (build 2348)"
+                                }
+                            ], 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "accept": false, 
+                                    "list_all": true, 
+                                    "resources": [], 
+                                    "serial_number": null, 
+                                    "session": {
+                                        "addresses": [
+                                            "100.68.108.111", 
+                                            "100.68.108.112"
+                                        ], 
+                                        "ansible_facts": {
+                                            "discovered_interpreter_python": "/usr/bin/python"
+                                        }, 
+                                        "changed": true, 
+                                        "failed": false, 
+                                        "session": {
+                                            "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                            "expires_in": 7199, 
+                                            "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                            "scope": "all", 
+                                            "token_type": "bearer"
+                                        }
+                                    }, 
+                                    "shred": false, 
+                                    "state": "present", 
+                                    "timeout": 30, 
+                                    "validate_certs": false, 
+                                    "wait_timeout": 120
+                                }
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:41:03.619935Z", 
+                            "start": "2020-03-05T15:41:02.686152Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-000000000012", 
+                        "name": "Gather list of machines"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_keystores", 
+                            "addresses": [
+                                {
+                                    "created_at": "2020-02-12T16:39:54.805Z", 
+                                    "description": "Initial keystore", 
+                                    "id": "e4c4ecef703a43f201703a4572e50020", 
+                                    "key_location_status": "accessible", 
+                                    "key_location_type": "local", 
+                                    "last_update_timestamp": "2020-02-12T16:39:54.853Z", 
+                                    "name": "Initial", 
+                                    "protector_status": "accessible", 
+                                    "protector_type": "cloudlink_vault", 
+                                    "target_id": "e4c4ecef703a43f201703a4572e50020", 
+                                    "used_in_groups": [
+                                        "Default"
+                                    ]
+                                }, 
+                                {
+                                    "created_at": "2020-02-24T23:55:51.480Z", 
+                                    "description": "Created by vxfm", 
+                                    "id": "e4c4ecef703a43f2017079a0e1420519", 
+                                    "key_location_status": "accessible", 
+                                    "key_location_type": "local", 
+                                    "last_update_timestamp": "2020-02-24T23:55:51.490Z", 
+                                    "name": "KS-1", 
+                                    "protector_status": "accessible", 
+                                    "protector_type": "cloudlink_vault", 
+                                    "target_id": "e4c4ecef703a43f2017079a0e1420519", 
+                                    "used_in_groups": [
+                                        "MG-1"
+                                    ]
+                                }, 
+                                {
+                                    "created_at": "2020-03-03T19:00:12.771Z", 
+                                    "description": "", 
+                                    "id": "e4c4ecef703a43f20170a1c515750736", 
+                                    "key_location_status": "accessible", 
+                                    "key_location_type": "local", 
+                                    "last_update_timestamp": "2020-03-03T19:00:12.789Z", 
+                                    "name": "test", 
+                                    "protector_status": "accessible", 
+                                    "protector_type": "cloudlink_vault", 
+                                    "target_id": "e4c4ecef703a43f20170a1c515750736", 
+                                    "used_in_groups": []
+                                }, 
+                                {
+                                    "created_at": "2020-03-04T22:46:42.603Z", 
+                                    "description": "Created by vxfm", 
+                                    "id": "e4c4ecf0703585750170a7baceb9039d", 
+                                    "key_location_status": "accessible", 
+                                    "key_location_type": "local", 
+                                    "last_update_timestamp": "2020-03-04T22:46:42.617Z", 
+                                    "name": "dumb_store_name", 
+                                    "protector_status": "accessible", 
+                                    "protector_type": "cloudlink_vault", 
+                                    "target_id": "e4c4ecf0703585750170a7baceb9039d", 
+                                    "used_in_groups": [
+                                        "dumb_group_name"
+                                    ]
+                                }
+                            ], 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "description": "", 
+                                    "key_location_type": null, 
+                                    "list_keystores": true, 
+                                    "name": null, 
+                                    "protector_type": null, 
+                                    "session": {
+                                        "addresses": [
+                                            "100.68.108.111", 
+                                            "100.68.108.112"
+                                        ], 
+                                        "ansible_facts": {
+                                            "discovered_interpreter_python": "/usr/bin/python"
+                                        }, 
+                                        "changed": true, 
+                                        "failed": false, 
+                                        "session": {
+                                            "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                            "expires_in": 7199, 
+                                            "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                            "scope": "all", 
+                                            "token_type": "bearer"
+                                        }
+                                    }, 
+                                    "state": "absent", 
+                                    "timeout": 30, 
+                                    "validate_certs": false
+                                }
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:41:04.554586Z", 
+                            "start": "2020-03-05T15:41:03.623991Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-000000000013", 
+                        "name": "Gather list of keystores"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_performance", 
+                            "addresses": {
+                                "free_file_space": 18589270016, 
+                                "free_physical_memory_size": 3917008896, 
+                                "free_swap_space_size": 6143602688, 
+                                "load_average": 0.0, 
+                                "system_cpu_load": 0.001395141816804187
+                            }, 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "current_performance": true, 
+                                    "session": {
+                                        "addresses": [
+                                            "100.68.108.111", 
+                                            "100.68.108.112"
+                                        ], 
+                                        "ansible_facts": {
+                                            "discovered_interpreter_python": "/usr/bin/python"
+                                        }, 
+                                        "changed": true, 
+                                        "failed": false, 
+                                        "session": {
+                                            "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                            "expires_in": 7199, 
+                                            "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                            "scope": "all", 
+                                            "token_type": "bearer"
+                                        }
+                                    }, 
+                                    "timeout": 30, 
+                                    "validate_certs": false
+                                }
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:41:05.455705Z", 
+                            "start": "2020-03-05T15:41:04.558651Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-000000000014", 
+                        "name": "Gather current performance"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_performance", 
+                            "addresses": {
+                                "available_processors": 4, 
+                                "total_file_space": 21336670208, 
+                                "total_physical_memory_size": 6257057792, 
+                                "total_swap_space_size": 6143602688
+                            }, 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "current_performance": false, 
+                                    "session": {
+                                        "addresses": [
+                                            "100.68.108.111", 
+                                            "100.68.108.112"
+                                        ], 
+                                        "ansible_facts": {
+                                            "discovered_interpreter_python": "/usr/bin/python"
+                                        }, 
+                                        "changed": true, 
+                                        "failed": false, 
+                                        "session": {
+                                            "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                            "expires_in": 7199, 
+                                            "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                            "scope": "all", 
+                                            "token_type": "bearer"
+                                        }
+                                    }, 
+                                    "timeout": 30, 
+                                    "validate_certs": false
+                                }
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:41:06.082223Z", 
+                            "start": "2020-03-05T15:41:05.459793Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-000000000015", 
+                        "name": "Gather common performance"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "100.68.108.111-100.68.108.112": {
+                            "_ansible_no_log": false, 
+                            "action": "cloudlink_auth_session", 
+                            "changed": true, 
+                            "invocation": {
+                                "module_args": {
+                                    "addresses": null, 
+                                    "password": null, 
+                                    "session": {
+                                        "addresses": [
+                                            "100.68.108.111", 
+                                            "100.68.108.112"
+                                        ], 
+                                        "ansible_facts": {
+                                            "discovered_interpreter_python": "/usr/bin/python"
+                                        }, 
+                                        "changed": true, 
+                                        "failed": false, 
+                                        "session": {
+                                            "access_token": "e0fe84e8-4b0b-445d-9d5a-aa5ab1c5eb24", 
+                                            "expires_in": 7199, 
+                                            "refresh_token": "1459ce00-750a-43c1-b6c8-d6460737b5a9", 
+                                            "scope": "all", 
+                                            "token_type": "bearer"
+                                        }
+                                    }, 
+                                    "state": "absent", 
+                                    "timeout": 30, 
+                                    "username": null, 
+                                    "validate_certs": false
+                                }
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "duration": {
+                            "end": "2020-03-05T15:41:06.723711Z", 
+                            "start": "2020-03-05T15:41:06.086281Z"
+                        }, 
+                        "id": "005056b6-b56c-67a1-5c1d-00000000000a", 
+                        "name": "log out"
+                    }
+                }
+            ]
+        }
+    ], 
+    "stats": {
+        "100.68.108.111-100.68.108.112": {
+            "changed": 2, 
+            "failures": 0, 
+            "ignored": 0, 
+            "ok": 13, 
+            "rescued": 0, 
+            "skipped": 0, 
+            "unreachable": 0
+        }
+    }
+}
