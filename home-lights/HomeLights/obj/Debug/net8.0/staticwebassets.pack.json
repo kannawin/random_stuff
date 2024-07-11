@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/skannawin/Code/home-lights/HomeLights/obj/Debug/net8.0/scopedcss/projectbundle/HomeLights.bundle.scp.css",
+      "PackagePath": "staticwebassets/HomeLights.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/skannawin/Code/home-lights/HomeLights/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/skannawin/Code/home-lights/HomeLights/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/skannawin/Code/home-lights/HomeLights/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/skannawin/Code/home-lights/HomeLights/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.HomeLights.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.HomeLights.props",
+      "PackagePath": "build\\HomeLights.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.HomeLights.props",
+      "PackagePath": "buildMultiTargeting\\HomeLights.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.HomeLights.props",
+      "PackagePath": "buildTransitive\\HomeLights.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

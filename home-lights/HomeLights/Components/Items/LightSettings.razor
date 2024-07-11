@@ -1,0 +1,29 @@
+@using AntDesign
+
+@{
+    string display = Visible ? "block" : "none";
+}
+
+<div style="display: @display;">
+    <GridRow Gutter="(16, 16)" Style="min-height: 200px;">
+        <GridCol Span="2">
+            <Button Style="height: 100%; width: 100%;">
+                <Icon Type="bulb" Theme="outline"/>
+            </Button>
+        </GridCol>
+        <GridCol Span="22">
+            <Card Style="height: 100%; width: 100%;">
+                <Card Bordered="false" Title="Dimming Amount:" Style="height: 25%; width: 100%;">
+                    <div>
+                        <Slider Min="0" Max="100" Value="@DimDummy" TValue="double" OnChange="OnDimChange"/>
+                    </div>
+                </Card>
+                <Card Bordered="false" Title="RGB Values:" Style="height: 75%%; width: 100%;">
+                    <div>
+                        <Slider Min="0" Max="100" Value="@RgbDummy" TValue="double" OnChange="OnRgbChange"/>
+                    </div>
+                </Card>
+            </Card>
+        </GridCol>
+    </GridRow>
+</div>

@@ -1,0 +1,62 @@
+@page "/"
+@page "/Lights"
+@using AntDesign
+@using HomeLights.Components.Items;
+
+<PageTitle>Home Lights</PageTitle>
+
+<Layout Style="min-height: 100vh;">
+    <Header style="min-height: 25px;"/>
+    <Content>
+        <Layout>
+            <Sider Width="350" Class="lights-layout-bg" >
+                <Menu Mode="MenuMode.Inline" DefaultSelectedKeys=@(new[]{"1"}) Style="height: 100%; padding: 24px 0;" Theme="MenuTheme.Dark">
+                    <MenuItem Key="1">
+                        <Icon Type="bulb" Theme="outline"/>
+                        <span>@debugRoom.Id.ToString();</span>
+                    </MenuItem>
+                                <MenuItem Key="2">
+                        <Icon Type="bulb" Theme="outline"/>
+                        <span>@debugRoom.Id.ToString();</span>
+                    </MenuItem>
+                                <MenuItem Key="3">
+                        <Icon Type="bulb" Theme="outline"/>
+                        <span>@debugRoom.Id.ToString();</span>
+                    </MenuItem>
+                </Menu>
+            </Sider>
+            <Content Style="padding: 16px;" >
+                <Breadcrumb Style="padding: 16px;">
+                    <BreadcrumbItem>
+                        <Icon Type="bulb" Theme="outline"/>
+                    </BreadcrumbItem>
+                    <BreadcrumbItem>
+                        <Icon Type="bulb" Theme="outline"/>
+                    </BreadcrumbItem>
+                    <BreadcrumbItem>
+                        @debugRoom.Id.ToString();
+                    </BreadcrumbItem>
+                    <BreadcrumbItem>
+                        <Icon Type="bulb" Theme="outline"/>
+                    </BreadcrumbItem>
+                    <BreadcrumbItem>
+                        <Icon Type="bulb" Theme="outline"/>
+                    </BreadcrumbItem>
+                </Breadcrumb>
+                <div class="lights-layout-bg" style="padding: 24px; min-height: 800px">
+                    Sliders n stuff here
+                    <Card Style="width: 100%; min-height: 200px;">
+                        <LightSettings Visible="@true" SelectedLight="@debugLight"/>
+                    </Card>
+                </div>
+            </Content>
+        </Layout>
+    </Content>
+</Layout>
+
+<style>
+    .lights-layout-bg {
+        background: #fff;
+    }
+</style>
+
